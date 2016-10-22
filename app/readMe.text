@@ -1,0 +1,16 @@
+Steps to run this project:
+1. Please first install npm  http-server using this command --> sudo npm install -g http-server
+2. then cd into the directory app(wherever it is).
+3.type this command --> http-server -o  to run this project, this will automatically open this in your browser(I am using chrome, So it works fine for me).
+
+Information about the task completition and flow.
+I have made this project using AngularJs 1.4.7
+1-homePage-> enter your details and you can proceed. Validation is done
+2-galleryPage-> 
+			2.1 cards are shown, you can go and select them using by clicking on 'Use this design'.
+			2.2 comment by clicking on the comment icon on the left.. ***after commenting press enter to store you comment**
+3-->(if you are stuck anywhere try hard reloading)
+    3.1 on clicking on 'use this design' you will be directed to addcars page.. 
+	3.2 Feel free to add your card,
+	3.3 Please enter description otherwise error message will be shown.
+	3.4 you can watch your preview by clicking on preview

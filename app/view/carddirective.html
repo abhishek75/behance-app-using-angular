@@ -1,0 +1,13 @@
+<div class="back">
+    <button type="submit" class="btn btn-default" ng-click="back()">Back</button>
+</div>
+<div ng-repeat="card in cardsinfo" class="col-lg-3 col-md-3 col-sm-6 col-xs-12" id="card">
+	<div>
+		<span ng-click="addcard($index)">Use this design</span>
+		<span ng-click="showcommentbox($index)"><i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp; ({{card.comment.length}})</span>
+	</div>
+	<div><img ng-src="assets/img/{{card.imageUrl}}" ></div>
+	<div>{{card.desc}}</div>
+	<div ng-show="card.showingcommentbox"><input ng-model="newcomment" ng-keyup="$event.keyCode == 13 ? collectcomment($index,newcomment):null"></div>
+</div>
+

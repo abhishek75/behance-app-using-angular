@@ -1,0 +1,29 @@
+#card,#preview{
+	padding: 30px;
+    text-align: left;
+    height: 320px;
+}
+#card>div,#preview>div{
+    padding: 5px;
+    color: #595959;
+    font-size: 16px;
+    font-family: cursive;
+    font-weight: 600;
+}
+#card>div>span:nth-child(1),#preview>div>span:nth-child(1){
+	text-align: left;
+	cursor: pointer;
+}
+#card>div>span:nth-child(2),#preview>div>span:nth-child(2){
+	float: right;
+	cursor: pointer;
+}
+#card>div:nth-child(3){
+		
+}
+.back{
+	text-align: right;
+}
+fa-times{
+	
+}

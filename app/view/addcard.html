@@ -1,0 +1,22 @@
+<div ng-hide="showingpreview" class="col-lg-3 col-md-3 col-sm-6 col-xs-12" id="card">
+	<div class="alert alert-danger" ng-show="showerror">
+      <a href="" class="close" ng-click="removeinvalidationmessage()">&times;</a>
+      <strong>Please enter the Description</strong> 
+    </div>
+	<div ng-click="showpreview()" ><span>PREVIEW</span></div>
+	<div><img src="assets/img/2.png"></div>
+	<div>
+		<div>Description</div>
+		<input ng-model="desc">
+	</div>
+	<button class="btn btn-default" ng-click="addcard()" >Add Card</button>
+</div>
+<div ng-show="showingpreview" class="col-lg-3 col-md-3 col-sm-6 col-xs-12" id="preview">
+	<div ng-click="backtoNormal()" class="back"><i class="fa fa-times" aria-hidden="true"></i></div>
+	<div><span>Use this design</span><span><i class="fa fa-comment-o" aria-hidden="true"></i></span></div>
+	<div><img src="/assets/img/2.png"></div>
+	<div>{{desc}}</div>
+	<div>Comment&nbsp; (0)</div>
+</div>
+
+
